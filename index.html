@@ -1,36 +1,381 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>shopify</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>HAMBURGUR</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta 	charset="utf-8">
+	<style type="text/css">
+		
+	/*	body{
+	background-image: url(images/1DnQoA.jpg);
+              background-repeat: no-repeat;
+              opacity: 0.9;
+background-size: cover;}
+
+@media only screen and (max-width:768px){
+
+   body{
+  background-image: url(images/5c9277a0546c4b8e9244ce4fd09a5496.jpg);
+              background-repeat: no-repeat;
+              opacity: 0.9;
+background-size: cover;}
+
+}*/
+
+
+.hero-image{
+	/*background-image:linear-gradient(rgba(0, 0, 0,0.5),rgba(0,0,0,0.5)), url("UNIVERSITY-OF-GHANA-LOGO-1.png");*/
+	height: 800px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+
+}
+
+.hero-text{
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%);
+	color: white;
+	
+
+}
+
+.hero-text button{
+	border:none;
+	outline:0;
+	display: inline-block;
+	padding: 10px 25px; 
+	background-color: #ddd;
+	text-align: center;
+	cursor: pointer;
+
+border-radius: 20px;
+}
+
+.hero-text button:hover{
+	background-color: teal;
+	color: white;
+	
+
+
+}
+
+.main{
+	display: flex;
+
+
+}
+
+.main button{
+	border:none;
+	outline:0;
+	display: inline-block;
+	padding: 10px 25px; 
+	background-color: #ddd;
+	text-align: center;
+	cursor: pointer;
+
+border-radius: 20px;
+}
+
+.main2 button{
+	border:none;
+	outline:0;
+	display: inline-block;
+	padding: 10px 25px; 
+	background-color: #ddd;
+	text-align: center;
+	cursor: pointer;
+
+border-radius: 20px;
+}
+
+.main3 button{
+	border:none;
+	outline:0;
+	display: inline-block;
+	padding: 10px 25px; 
+	background-color: #ddd;
+	text-align: center;
+	cursor: pointer;
+
+border-radius: 20px;
+}
+
+.main button:hover{
+	background-color: teal;
+	color: white;
+}
+
+.main2 button:hover{
+	background-color: teal;
+	color: white;
+}
+
+.main3 button:hover{
+	background-color: teal;
+	color: white;
+}
+
+@media only screen and (max-width:768px){
+
+	.main{
+	display: block;
+
+	}
+
+.main2 .first{
+	background-image:linear-gradient(rgba(0, 0, 0,0.5),rgba(0,0,0,0.5)), url("images1/1.png");
+	flex: 1;
+	height: 300px;
+	padding: 10px;
+	
+	}
+.main3 .first{
+	background-image:linear-gradient(rgba(0, 0, 0,0.5),rgba(0,0,0,0.5)), url("images1/2.png");
+	background-size: cover;
+	flex: 1;
+	height: 300px;
+	padding: 10px;
+	
+	}
+
+	.second{
+		display: none;
+	}
+
+	.second2{
+		display: none;
+	}
+
+
+
+}
+
+@media only screen and (min-width:768px){
+
+	.main2{
+	display: none;
+	}
+.main3{
+	display: none;
+	}
+
+	.second{
+	flex: 1;
+	
+	margin: 20px;
+	background-image:linear-gradient(rgba(32, 21, 0,0.5),rgba(0,0,0,0.5)), url("images1/ff.jpg");
+	background-size: cover;
+	flex: 1;
+	height: 300px;
+	padding: 10px;
+	margin: 20px;
+}
+
+
+.second2{
+	flex: 1;
+		margin: 20px;
+	background-image:linear-gradient(rgba(32, 21, 0,0.5),rgba(0,0,0,0.5)), url("images1/1.png");
+	background-size: cover;
+	flex: 1;
+	height: 300px;
+	padding: 10px;
+	margin: 20px;
+	
+}
+
+
+
+}
+
+
+.first{
+	
+	margin: 20px;
+	background-image:linear-gradient(rgba(32, 21, 0,0.5),rgba(0,0,0,0.5)), url("images1/4.gif");
+	background-size: cover;
+	flex: 1;
+	height: 300px;
+	padding: 10px;
+}
+
+.second{
+	flex: 1;
+	background-color: 	green;
+	margin: 20px;
+}
+.second2{
+	flex: 1;
+	background-color: 	teal;
+	margin: 20px;
+	
+}
+
+
+
+
+#slider{
+	overflow: hidden;
+}
+
+#slider figure{
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left:0;
+	animation: 20s slider infinite;
+
+
+}
+
+#slider figure img{
+	width: 20%;
+	float: left;
+}
+#slider img{
+	height: 800px;
+}
+@keyframes slider{
+	  0%{top: 0;}
+      20%{left:0;}
+      25%{left: -100%;} 
+      45%{left: -200%;}
+      70%{left: -300%;}
+      90%{left: -300%;}
+        100%{left: -400%;}
+
+        
+  }
+
+
+
+	</style>
+
 </head>
 <body>
+	<div class="nav">
+	<label for="toggle">&#9776</label>
+	<input id="toggle" type="checkbox" name="">
+			
+					<div class="links">
+					<a href="index.html">	HOME</a>
+					<a href="about.html">ABOUT</a>
+					<a href="register.html">REGISTER</a>
+				    <a href="contact.html">	CONTACT</a>	
+
+</div>
+
+	</div>	
+
+
+	<!--  <h1 class="welcometxt" style="text-align: center;padding-top: 250px;color: black;font-size: 69px;font-family: Trebuchet MS;font-weight: bold;margin-left:70px;"> WELCOME TO THE HOME PAGE</h1> -->
+
+<div id="slider">
+		<figure>
+			<img src="images1/1.png">
+				<img src="images1/2.png">
+					<img src="images1/3.webp">
+						<img src="images1/4.gif">
+							<img src="images1/1.png">
+		</figure>
+	<div class="hero-image" >
+		<div class="hero-text">
+			<h1 style="font-size: 50px">WELCOME TO THE OFFICIAL WEBSITE OF SHOPIFY</h1>
+			<p></p>
+			<button>START SHOPING</button>
+		</div>
+	</div>
+	<br>
+	<hr width="70%">
+<h1 style="text-align: center;text-decoration: underline;">SERVICES</h1>
+
+	<div class="main">
+
+		<div class="first">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<button>START SHOPING</button>
+		</div>
+
+		<div class="second">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<button>START SHOPING</button>	
+
+		</div>
+		<div class="second2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<button>START SHOPING</button>
+
+
+		</div>
+		</div>
+
+
+
+
+<div class="main2">
+
+		<div class="first">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<button>START SHOPING</button>
+		</div>
+
+		
+		</div>
+
+
+		<div class="main3">
+
+		<div class="first">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<button>START SHOPING</button>
+		</div>
+
+		
+		</div>
+
+
+
+
+		<br>
 	
-<section id="home" class="parallax-section">
-     <div class="overlay"></div>
-     <div class="container">
-          <div class="row">
 
-               <div class="col-md-8 col-sm-12">
-                    <div class="home-text">
-                         <h1>WELCOME TO SHOPIFY!</h1>
-                         <p>Feel free to download and use HTML templates from Tooplate</p>
-                         <ul class="section-btn">
-                          <a href="Home.html">
-                              <button id="shop">$TART $HOPING</button></a>
-                         </ul>
-                    </div>
-               </div>
+</div>
 
-          </div>
-     </div>
 
-     <!-- Video -->
-     <video controls autoplay loop muted>
-          <source src="videos/PexelsVideos 2675511.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-     </video>
-</section>
 
-	</body>
-  </html>
+	
+
+</body>
+</html>
